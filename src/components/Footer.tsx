@@ -1,4 +1,4 @@
-// import { Github, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 
 export default function Footer() {
 	return (
@@ -112,35 +112,35 @@ export default function Footer() {
 									Follow Us
 								</h3>
 
-								{/* <div className="flex gap-3">
+								<div className="flex gap-3">
 									<a
 										href="#"
 										className="rounded-full bg-white/10 p-3 text-white transition hover:bg-white/20"
 									>
-										<Github size={18} />
+										<FaGithub size={18} />
 									</a>
 
 									<a
 										href="#"
 										className="rounded-full bg-white/10 p-3 text-white transition hover:bg-white/20"
 									>
-										<Twitter size={18} />
+										<FaXTwitter size={18} />
 									</a>
 
 									<a
 										href="#"
 										className="rounded-full bg-white/10 p-3 text-white transition hover:bg-white/20"
 									>
-										<Linkedin size={18} />
+										<FaLinkedin size={18} />
 									</a>
 
 									<a
 										href="#"
 										className="rounded-full bg-white/10 p-3 text-white transition hover:bg-white/20"
 									>
-										<Instagram size={18} />
+										<FaInstagram size={18} />
 									</a>
-								</div> */}
+								</div>
 							</div>
 						</div>
 
