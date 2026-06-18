@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import Header from './components/Header';
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
 						Tailwind is Working
 					</span>
 				</div>
+			</div>
+			<div className="bg-gradient-to-br">
+				<Footer />
 			</div>
 		</>
 	);
