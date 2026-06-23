@@ -1,5 +1,8 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import getLoginDetails from '../Service/commonLogics';
+
+getLoginDetails(); // calling common logics
 
 export default function Header() {
 	const [open, setOpen] = useState(false);
