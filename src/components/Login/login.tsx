@@ -76,7 +76,7 @@ export default function LoginForm() {
 }
 
 // Simple Inline CSS Styles
-const styles = {
+const styles: Record<string, React.CSSProperties> = {
 	container: {
 		display: 'flex',
 		justifyContent: 'center',
