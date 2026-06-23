@@ -1,11 +1,11 @@
 import './App.css';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+import LoginForm from './components/Login/login';
 
 function App() {
 	return (
 		<>
-			<div className="bg-gradient-to-br">
+			<LoginForm />
+			{/* <div className="bg-gradient-to-br">
 				<Header />
 				<h1>MERN React Application</h1>
 				<div className="flex justify-center">
@@ -16,7 +16,7 @@ function App() {
 					</div>
 				</div>
 				<Footer />
-			</div>
+			</div> */}
 		</>
 	);
 }
