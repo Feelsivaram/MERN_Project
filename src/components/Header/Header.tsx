@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import getLoginDetails from '../Service/commonLogics';
 
 getLoginDetails(); // calling common logics
@@ -23,30 +24,24 @@ export default function Header() {
 
 						{/* Desktop Menu */}
 						<div className="hidden md:flex items-center gap-8">
-							<a
-								href="#"
+							<Link
+								to="/"
 								className="text-white/90 transition hover:text-white"
 							>
 								Home
-							</a>
-							<a
-								href="#"
+							</Link>
+							<Link
+								to="/about"
 								className="text-white/90 transition hover:text-white"
 							>
 								About
-							</a>
-							<a
-								href="#"
-								className="text-white/90 transition hover:text-white"
-							>
-								Services
-							</a>
-							<a
-								href="#"
+							</Link>
+							<Link
+								to="/contact"
 								className="text-white/90 transition hover:text-white"
 							>
 								Contact
-							</a>
+							</Link>
 
 							<button className="rounded-full bg-white/20 px-5 py-2 text-white backdrop-blur-md transition hover:bg-white/30">
 								Get Started
