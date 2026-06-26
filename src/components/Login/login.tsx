@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function LoginForm() {
 	// 1. Manage form state
@@ -6,6 +6,15 @@ export default function LoginForm() {
 	const [password, setPassword] = useState('');
 	const [error, setError] = useState('');
 	const [success, setSuccess] = useState('');
+
+	const usernameRef = useRef<HTMLInputElement>(null);
+
+	useEffect(() => {
+		console.log(
+			'Used useRef hook in useEffectHook to focus email address.',
+		);
+		usernameRef.current?.focus();
+	}, []);
 
 	// 2. Handle form submission
 	const handleSubmit = (event: any) => {
@@ -46,6 +55,7 @@ export default function LoginForm() {
 					<input
 						id="email"
 						type="email"
+						ref={usernameRef}
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
 						style={styles.input}

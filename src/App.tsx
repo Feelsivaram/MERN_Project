@@ -1,17 +1,11 @@
-import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import About from './components/Pages/About/about';
-import Dashboard from './components/Pages/Dashboard/dashboard';
-import NotFoundPage from './components/Pages/NotFoundPage';
-import Search from './components/Pages/Search/search';
+import LoginForm from './components/Login/login';
 
 function App() {
 	return (
 		<>
-			{/* <LoginForm /> */}
-			<div className="bg-gradient-to-br">
+			<LoginForm />
+			{/* <div className="bg-gradient-to-br">
 				<Header />
 				<h1>MERN React Application</h1>
 				<div className="flex justify-center">
@@ -29,7 +23,7 @@ function App() {
 					<Route path="*" element={<NotFoundPage />} />
 				</Routes>
 				<Footer />
-			</div>
+			</div> */}
 		</>
 	);
 }
