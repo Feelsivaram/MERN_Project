@@ -43,10 +43,10 @@ export default function Header() {
 								Contact
 							</Link>
 							<Link
-								to="/recharge"
+								to="/todo"
 								className="text-white/90 transition hover:text-white"
 							>
-								Rechanrge
+								ToDo
 							</Link>
 
 							<button className="rounded-full bg-white/20 px-5 py-2 text-white backdrop-blur-md transition hover:bg-white/30">

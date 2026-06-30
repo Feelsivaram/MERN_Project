@@ -6,13 +6,13 @@ import About from './components/Pages/About/about';
 import Dashboard from './components/Pages/Dashboard/dashboard';
 import NotFoundPage from './components/Pages/NotFoundPage';
 import Search from './components/Pages/Search/search';
-import Sidebar from './components/SideMenu/sideMenu';
+import ToDo from './components/Pages/Todo/todo';
 
 function App() {
 	return (
 		<>
 			{/* <LoginForm /> */}
-			<Sidebar />
+			{/* <Sidebar /> */}
 			<div className="bg-gradient-to-br">
 				<Header />
 				<h1>MERN React Application</h1>
@@ -28,6 +28,7 @@ function App() {
 					<Route path="/" element={<Search />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/contact" element={<Dashboard />} />
+					<Route path="/todo" element={<ToDo />} />
 					<Route path="*" element={<NotFoundPage />} />
 				</Routes>
 				<Footer />
