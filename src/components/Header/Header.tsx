@@ -25,7 +25,7 @@ export default function Header({ sidebarOpen }: HeaderProps) {
 		>
 			{/* Center Title */}
 			<h1 className="text-xl font-semibold text-white tracking-wide">
-				GitHub Dashboard
+				MERN Project
 			</h1>
 
 			{/* Optional Right Section */}

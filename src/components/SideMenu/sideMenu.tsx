@@ -167,8 +167,8 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
                 items-center
                 gap-4
                 w-full
-                px-3
-                py-2.5
+                px-2
+                py-2
                 rounded-lg
                 text-gray-300
                 hover:bg-zinc-900
@@ -208,8 +208,8 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
                 items-center
                 gap-4
                 w-full
-                px-3
-                py-2.5
+                px-2
+                py-2
                 rounded-lg
                 text-gray-300
                 hover:bg-zinc-900
@@ -240,10 +240,9 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
 							{repositories.map((repo) => (
 								<button
 									key={repo}
-									className="
-                    w-full
+									className="w-full
                     text-left
-                    px-3
+                    px-2
                     py-2
                     rounded-lg
                     text-sm
