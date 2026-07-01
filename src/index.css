@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+/* @import 'tailwindcss';
 
 :root {
 	--text: #6b6375;
@@ -54,7 +54,6 @@
 }
 
 #root {
-	/* width: 1126px; */
 	max-width: 100%;
 	margin: 0 auto;
 	text-align: center;
@@ -96,4 +95,39 @@ h2 {
 }
 p {
 	margin: 0;
+} */
+
+@import 'tailwindcss';
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: #0d1117;
+	color: #f0f6fc;
+	font-family: Inter, sans-serif;
+	overflow: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #0d1117;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #30363d;
+	border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #484f58;
 }
