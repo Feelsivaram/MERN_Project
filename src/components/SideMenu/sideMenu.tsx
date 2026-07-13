@@ -240,17 +240,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
 							{repositories.map((repo) => (
 								<button
 									key={repo}
-									className="w-full
-                    text-left
-                    px-2
-                    py-2
-                    rounded-lg
-                    text-sm
-                    text-gray-400
-                    hover:bg-zinc-900
-                    hover:text-white
-                    transition
-                  "
+									className="w-full text-left px-2 py-2 rounded-lg text-sm text-gray-400 hover:bg-zinc-900 hover:text-white transition"
 								>
 									{repo}
 								</button>
