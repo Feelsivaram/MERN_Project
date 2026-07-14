@@ -1,67 +1,3 @@
-// import { Home, LogOut, Mail, Menu, Settings, User } from 'lucide-react';
-// import { useState } from 'react';
-
-// export default function Sidebar() {
-// 	const [open, setOpen] = useState(true);
-
-// 	const menuItems = [
-// 		{ title: 'Home', icon: <Home size={22} /> },
-// 		{ title: 'Profile', icon: <User size={22} /> },
-// 		{ title: 'Messages', icon: <Mail size={22} /> },
-// 		{ title: 'Settings', icon: <Settings size={22} /> },
-// 		{ title: 'Logout', icon: <LogOut size={22} /> },
-// 	];
-
-// 	return (
-// 		<div className="flex h-screen bg-zinc-900">
-// 			{/* Sidebar */}
-// 			<div
-// 				className={`bg-black text-white transition-all duration-300 ease-in-out
-//         ${open ? 'w-72' : 'w-20'}`}
-// 			>
-// 				{/* Header */}
-// 				<div className="flex items-center justify-between p-5">
-// 					{open && (
-// 						<h1 className="text-xl font-bold whitespace-nowrap">
-// 							Dashboard
-// 						</h1>
-// 					)}
-
-// 					<button onClick={() => setOpen(!open)}>
-// 						<Menu />
-// 					</button>
-// 				</div>
-
-// 				{/* Menu */}
-// 				<nav className="mt-8 space-y-2 px-2">
-// 					{menuItems.map((item, index) => (
-// 						<button
-// 							key={index}
-// 							className="flex w-full items-center gap-4 rounded-xl p-3 hover:bg-zinc-800 transition-all"
-// 						>
-// 							<span className="text-red-500 flex-shrink-0">
-// 								{item.icon}
-// 							</span>
-
-// 							<span
-// 								className={`overflow-hidden whitespace-nowrap transition-all duration-300
-//                 ${open ? 'opacity-100' : 'w-0 opacity-0'}`}
-// 							>
-// 								{item.title}
-// 							</span>
-// 						</button>
-// 					))}
-// 				</nav>
-// 			</div>
-
-// 			{/* Main Content */}
-// 			<div className="flex-1 p-8 text-white">
-// 				<h1 className="text-3xl font-bold">Main Content</h1>
-// 			</div>
-// 		</div>
-// 	);
-// }
-
 import {
 	FiAlertCircle,
 	FiBookOpen,
@@ -109,20 +45,7 @@ const repositories = [
 export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
 	return (
 		<aside
-			className={`
-        fixed
-        left-0
-        top-0
-        h-screen
-        bg-black
-        border-r
-        border-gray-800
-        transition-all
-        duration-300
-        ease-in-out
-        z-50
-        ${isOpen ? 'w-72' : 'w-20'}
-      `}
+			className={`fixed left-0 top-0 h-screen bg-black border-r border-gray-800 transition-all duration-300 ease-in-out z-50 ${isOpen ? 'w-60' : 'w-15'}`}
 		>
 			{/* Header */}
 			<div className="relative flex items-center justify-center h-16 border-b border-gray-800">
@@ -132,24 +55,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
 				{/* Toggle Button */}
 				<button
 					onClick={toggleSidebar}
-					className="
-            absolute
-            -right-4
-            top-1/2
-            -translate-y-1/2
-            w-8
-            h-8
-            rounded-full
-            bg-zinc-800
-            hover:bg-zinc-700
-            flex
-            items-center
-            justify-center
-            transition
-            shadow-lg
-            border
-            border-zinc-700
-          "
+					className=" absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-zinc-800 hover:bg-zinc-700 flex items-center justify-center transition shadow-lg border border-zinc-700   "
 				>
 					{isOpen ? <FiX /> : <FiMenu />}
 				</button>
@@ -162,21 +68,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
 					{menuItems.map((item) => (
 						<button
 							key={item.name}
-							className={`
-                flex
-                items-center
-                gap-4
-                w-full
-                px-2
-                py-2
-                rounded-lg
-                text-gray-300
-                hover:bg-zinc-900
-                hover:text-white
-                transition-all
-                duration-200
-                ${item.name === 'Repositories' ? 'bg-zinc-900 text-white' : ''}
-              `}
+							className={`flex items-center gap-4 w-full px-2 py-2 rounded-lg text-gray-300 hover:bg-zinc-900 hover:text-white transition-all duration-200 ${item.name === 'Repositories' ? 'bg-zinc-900 text-white' : ''}`}
 						>
 							<span className="text-xl">{item.icon}</span>
 
@@ -203,19 +95,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
 					{exploreItems.map((item) => (
 						<button
 							key={item.name}
-							className="
-                flex
-                items-center
-                gap-4
-                w-full
-                px-2
-                py-2
-                rounded-lg
-                text-gray-300
-                hover:bg-zinc-900
-                hover:text-white
-                transition-all
-              "
+							className="flex items-center gap-4 w-full px-2 py-2 rounded-lg text-gray-300 hover:bg-zinc-900 hover:text-white transition-all"
 						>
 							<span className="text-xl">{item.icon}</span>
 
