@@ -264,4 +264,33 @@ export const portfolio: PortfolioData = {
 				'An excellent engineer who combines technical depth with strong collaboration.',
 		},
 	],
+
+	achievements: [
+		{
+			title: 'Excellent Performer Award',
+			organization: 'Maple Alliance Tech Solutions',
+			year: '2017',
+			description:
+				'Awarded for outstanding contribution and exceptional performance.',
+		},
+
+		{
+			title: 'Technical Fest Coordinator',
+			organization: 'TRR College of Engineering',
+			year: '2013',
+			description:
+				'Coordinator and Problem Setter for Annual Technical Coding Fest.',
+		},
+	],
+
+	education: [
+		{
+			degree: 'Bachelor of Technology',
+			specialization: 'Information Technology',
+
+			college: 'TRR College of Engineering (JNTUH)',
+
+			year: '2010 - 2014',
+		},
+	],
 };

@@ -1,7 +1,10 @@
 import './App.css';
 import Navbar from './components/Header/Navbar';
 import About from './components/Portfolio/About';
+import Achievements from './components/Portfolio/Achivements';
+import Experience from './components/Portfolio/Expirence';
 import Hero from './components/Portfolio/Hero';
+import Projects from './components/Portfolio/Projects';
 import Services from './components/Portfolio/Services';
 import Skills from './components/Portfolio/Skills';
 
@@ -18,6 +21,12 @@ function App() {
 				<Skills />
 
 				<Services />
+
+				<Experience />
+
+				<Projects />
+
+				<Achievements />
 			</main>
 			{/* <Dashboard /> Need to navigate to dashboard */}
 		</>

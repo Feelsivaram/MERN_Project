@@ -41,6 +41,20 @@ export interface Testimonial {
 	message: string;
 }
 
+export interface Achievements {
+	title: string;
+	organization: string;
+	year: string;
+	description: string;
+}
+
+export interface Education {
+	degree: string;
+	specialization: string;
+	college: string;
+	year: string;
+}
+
 export interface PortfolioData {
 	hero: {
 		name: string;
@@ -73,4 +87,8 @@ export interface PortfolioData {
 	projects: Project[];
 
 	testimonials: Testimonial[];
+
+	achievements: Achievements[];
+
+	education: Education[];
 }
