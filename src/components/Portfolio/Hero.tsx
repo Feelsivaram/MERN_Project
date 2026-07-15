@@ -83,7 +83,7 @@ export default function Hero() {
 					<div className="relative mx-auto w-full max-w-lg">
 						{/* Main Card */}
 
-						<div className="relative overflow-hidden rounded-[40px] border border-slate-200 bg-white p-8 shadow-2xl dark:border-slate-800 dark:bg-slate-900">
+						<div className="relative rounded-[40px] border border-slate-200 bg-white p-8 shadow-2xl dark:border-slate-800 dark:bg-slate-900">
 							<img
 								src={hero.profileImage}
 								alt={hero.name}

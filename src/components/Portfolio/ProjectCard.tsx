@@ -9,8 +9,8 @@ interface Props {
 
 export default function ProjectCard({ project }: Props) {
 	return (
-		<Card className="overflow-hidden">
-			<div className="aspect-video overflow-hidden bg-slate-100 dark:bg-slate-800">
+		<Card className="">
+			<div className="aspect-video bg-slate-100 dark:bg-slate-800">
 				<img
 					src={project.image}
 					alt={project.title}

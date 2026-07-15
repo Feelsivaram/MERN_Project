@@ -22,7 +22,7 @@ export default function Layout({ children }: LayoutProps) {
 
 			{/* Main Content */}
 			<main
-				className={`pt-16 transition-all duration-300 ease-in-out h-screen overflow-hidden ${sidebarOpen ? 'ml-60' : 'ml-15'}`}
+				className={`pt-16 transition-all duration-300 ease-in-out h-screen ${sidebarOpen ? 'ml-60' : 'ml-15'}`}
 			>
 				{/* Scrollable Area */}
 				<div className="h-[calc(100vh-64px)] overflow-y-auto scroll-smooth p-6">
