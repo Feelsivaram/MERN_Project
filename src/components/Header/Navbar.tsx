@@ -1,11 +1,10 @@
-import { Menu, Moon, Sun, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import Button from '../ui/Button';
 import Container from '../ui/Container';
 
 export default function Navbar() {
 	const [open, setOpen] = useState(false);
-	const [dark, setDark] = useState(false);
 
 	const links = ['About', 'Skills', 'Experience', 'Projects', 'Contact'];
 
@@ -30,19 +29,6 @@ export default function Navbar() {
 					</nav>
 
 					<div className="hidden items-center gap-3 md:flex">
-						<button
-							aria-label="Toggle dark mode"
-							onClick={() => {
-								setDark((prev) => !prev);
-								document.documentElement.classList.toggle(
-									'dark',
-								);
-							}}
-							className="rounded-xl border border-slate-200 p-2 transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800"
-						>
-							{dark ? <Sun size={18} /> : <Moon size={18} />}
-						</button>
-
 						<Button href="#contact">Hire Me</Button>
 					</div>
 

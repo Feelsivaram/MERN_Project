@@ -8,7 +8,7 @@ export default function Skills() {
 		<Section id="skills">
 			<SectionTitle subtitle="Skills" title="Technologies I Work With" />
 
-			<div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+			<div className="grid gap-6 md:grid-cols-3 xl:grid-cols-6">
 				{portfolio.skills.map((skill) => (
 					<SkillCard
 						key={skill.name}
