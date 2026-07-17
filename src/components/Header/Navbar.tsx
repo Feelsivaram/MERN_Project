@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from '../ui/Button';
 import Container from '../ui/Container';
 
@@ -7,6 +8,8 @@ export default function Navbar() {
 	const [open, setOpen] = useState(false);
 
 	const links = ['About', 'Skills', 'Experience', 'Projects', 'Contact'];
+
+	const navigate = useNavigate();
 
 	return (
 		<header className="sticky top-0 z-50 border-b border-slate-200/60 bg-white/80 backdrop-blur-lg dark:border-slate-800 dark:bg-slate-950/80">
@@ -29,7 +32,9 @@ export default function Navbar() {
 					</nav>
 
 					<div className="hidden items-center gap-3 md:flex">
-						<Button href="#contact">Log In</Button>
+						<Button onClick={() => navigate('/login')}>
+							Log In
+						</Button>
 					</div>
 
 					<button
@@ -54,7 +59,9 @@ export default function Navbar() {
 							</a>
 						))}
 
-						<Button href="#contact">Log In</Button>
+						<Button>
+							<Link to="/login"> Log In </Link>
+						</Button>
 					</nav>
 				)}
 			</Container>
