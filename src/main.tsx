@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
 import App from './App.tsx';
 import './index.css';
 
@@ -12,11 +11,18 @@ import './index.css';
 // );
 
 // With Routing ****
-const renderRoot = document.getElementById('root')!;
-ReactDOM.createRoot(renderRoot).render(
+// const renderRoot = document.getElementById('root')!;
+// ReactDOM.createRoot(renderRoot).render(
+// 	<React.StrictMode>
+// 		<BrowserRouter>
+// 			<App />
+// 		</BrowserRouter>
+// 	</React.StrictMode>,
+// );
+
+// With different routing way
+ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<BrowserRouter>
-			<App />
-		</BrowserRouter>
+		<App />
 	</React.StrictMode>,
 );

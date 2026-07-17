@@ -13,7 +13,7 @@ export default function Navbar() {
 			<Container>
 				<div className="flex h-20 items-center justify-between">
 					<a href="#" className="text-2xl font-black tracking-tight">
-						Siva<span className="text-indigo-600">.</span>
+						Siva Ram<span className="text-indigo-600">.</span>
 					</a>
 
 					<nav className="hidden items-center gap-8 md:flex">
@@ -29,7 +29,7 @@ export default function Navbar() {
 					</nav>
 
 					<div className="hidden items-center gap-3 md:flex">
-						<Button href="#contact">Hire Me</Button>
+						<Button href="#contact">Log In</Button>
 					</div>
 
 					<button
@@ -54,7 +54,7 @@ export default function Navbar() {
 							</a>
 						))}
 
-						<Button href="#contact">Hire Me</Button>
+						<Button href="#contact">Log In</Button>
 					</nav>
 				)}
 			</Container>
