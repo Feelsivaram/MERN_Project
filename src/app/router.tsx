@@ -6,10 +6,10 @@ import AuthLayout from '../Layouts/AuthLayout';
 import MainLayout from '../Layouts/MainLayout';
 
 // New Pages
-import LandingPage from '../components/Pages/landingPage';
+import LandingPage from '../components/Pages/LandingPage';
+import LoginPage from '../components/Pages/Login/Login';
 import NotFoundPage from '../components/Pages/NotFoundPage';
-// import LoginPage from '../pages/Login/Login';
-// import RegisterPage from '../pages/Register/Register';
+import RegisterPage from '../components/Pages/Register/Register';
 
 export const router = createBrowserRouter([
 	// Public Routes
@@ -21,8 +21,8 @@ export const router = createBrowserRouter([
 	{
 		element: <AuthLayout />,
 		children: [
-			// { path: '/login', element: <LoginPage /> },
-			// { path: '/register', element: <RegisterPage /> },
+			{ path: '/login', element: <LoginPage /> },
+			{ path: '/register', element: <RegisterPage /> },
 		],
 	},
 	// Dashboard
