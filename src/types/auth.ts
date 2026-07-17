@@ -21,3 +21,12 @@ export interface RegisterErrors {
 	password?: string;
 	confirmPassword?: string;
 }
+
+import type { User } from './user';
+
+export interface AuthContextType {
+	user: User | null;
+	isAuthenticated: boolean;
+	login: (user: User) => void;
+	logout: () => void;
+}

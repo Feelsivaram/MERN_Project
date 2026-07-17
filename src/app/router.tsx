@@ -1,15 +1,14 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 
-// Existing Pages
 import Dashboard from '../components/Pages/Dashboard/dashboard';
-import AuthLayout from '../Layouts/AuthLayout';
-import MainLayout from '../Layouts/MainLayout';
-
-// New Pages
 import LandingPage from '../components/Pages/LandingPage';
 import LoginPage from '../components/Pages/Login/Login';
 import NotFoundPage from '../components/Pages/NotFoundPage';
 import RegisterPage from '../components/Pages/Register/Register';
+import AuthLayout from '../Layouts/AuthLayout';
+import MainLayout from '../Layouts/MainLayout';
+import ProtectedRoute from '../routes/ProtectedRoute';
+import PublicRoute from '../routes/PublicRoute';
 
 export const router = createBrowserRouter([
 	// Public Routes
@@ -19,16 +18,26 @@ export const router = createBrowserRouter([
 	},
 	// Authentication Routes
 	{
-		element: <AuthLayout />,
+		element: <PublicRoute />,
 		children: [
-			{ path: '/login', element: <LoginPage /> },
-			{ path: '/register', element: <RegisterPage /> },
+			{
+				element: <AuthLayout />,
+				children: [
+					{ path: '/login', element: <LoginPage /> },
+					{ path: '/register', element: <RegisterPage /> },
+				],
+			},
 		],
 	},
 	// Dashboard
 	{
-		path: '/dashboard',
-		element: <Dashboard />,
+		element: <ProtectedRoute />,
+		children: [
+			{
+				path: '/dashboard',
+				element: <Dashboard />,
+			},
+		],
 	},
 	// Redirect Example
 	{
